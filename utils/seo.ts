@@ -1,6 +1,6 @@
 export function getSiteMetaData({
-  title = 'Sajib Khan',
-  description = 'Sajib khan - frontend developer',
+  title = 'Sajib Khan | Expert Frontend Architect in JavaScript, React & Next.js',
+  description = 'Discover Sajib Khan, a seasoned frontend developer with 10+ years of expertise in JavaScript, React, TypeScript, and Next.js. Explore blogs, projects, and career highlights of an innovative web solutions architect.',
   type = 'website',
   author = '@sajibkhan',
   images = ['https://sajibkhan.com/images/og/website.png'],

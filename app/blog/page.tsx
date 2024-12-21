@@ -1,12 +1,8 @@
-import Markdown from 'markdown-to-jsx';
-import { getBlogsMetadata, getBlogContent } from '@/utils/blogs';
+import { getBlogsMetadata } from '@/utils/blogs';
 import React from 'react';
 
 // components
 import BlogSection from '@/components/sections/BlogSection';
-
-// utils
-import { capitalizeFirstLetter } from '@/utils/common';
 
 export const generateStaticParams = async () => {
   const blogs = getBlogsMetadata('blogs');
@@ -14,10 +10,8 @@ export const generateStaticParams = async () => {
 };
 
 export async function generateMetadata({ params }: any) {
-  const id = await params?.slug ? `${params?.slug} | Sajib's Blogs` : '';
-
   return {
-    title: `${capitalizeFirstLetter(id.replaceAll('-', ' ') ?? '')}`,
+    title: `Sajib's Blogs | Expert Thoughts on JavaScript, React, TypeScript, and Next.js`,
   };
 }
 
