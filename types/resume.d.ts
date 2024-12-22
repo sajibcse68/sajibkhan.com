@@ -1,5 +1,5 @@
 type ExperienceProps = {
-  head1: string | JSX.Element;
+  head1?: string | JSX.Element;
   head2?: string | JSX.Element;
   head3?: string | JSX.Element;
   head4?: string | JSX.Element;
@@ -13,4 +13,11 @@ type EducationProps = {
   gpa: string;
   org: { name: string; logo: ImageProps["src"] };
   time: string;
+};
+
+type CertificateProps = {
+  title: string;
+  org: { name: string; logo: ImageProps["src"] };
+  time?: string;
+  link: string;
 };

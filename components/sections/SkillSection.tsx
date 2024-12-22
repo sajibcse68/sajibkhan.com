@@ -1,101 +1,103 @@
-import Section from './section';
+import { FaGit, FaJs, FaReact } from 'react-icons/fa';
+
+import Section from './Section';
 
 export default function SkillSection() {
-  return (
-    <Section title="SKILLS">
-      <div className="md:flex text-sm">
-        <div className="w-full">
-          <>
-            <span className="font-bold w-40">Core Technologies</span>: &nbsp;
-            <p className="inline">
-              JavaScript (10Y), React (7Y), TypeScript (5Y), Next.js (5Y),
-              Webpack, Git – with a deep understanding of modern frontend
-              development principles.
-            </p>
-          </>
-        </div>
-      </div>
+  const topSkills = [
+    'JavaScript',
+    'React',
+    'Next.js',
+    'TypeScript',
+    'Redux',
+    'CSS',
+    'HTML5',
+    'Git',
+  ];
 
-      <div className="md:flex text-sm">
-        <div className="w-full">
-          <>
-            <span className="font-bold w-40">State Management</span>: &nbsp;
-            <p className="inline">
-              Redux (+redux-saga), React Context, Vuex – architecting complex
-              apps with efficient state/data flow strategies.
-            </p>
-          </>
+  const stackOverflowBadges = [
+    {
+      name: 'gold',
+      value: 9,
+      color: '#FFCC00',
+    },
+    {
+      name: 'silver',
+      value: 68,
+      color: '#B4B8BC',
+    },
+    {
+      name: 'bronze',
+      value: 79,
+      color: '#D1A684',
+    },
+  ];
+
+  return (
+    <div className="flex justify-between items-start">
+      <Section classes="text-zinc-900 dark:text-zinc-200" title="SKILLS">
+        <div className="space-y-2">
+          <ul className="grid grid-cols-2 gap-x-3 gap-y-1">
+            {topSkills.map((skill) => (
+              <li key={skill}>•&nbsp; {skill}</li>
+            ))}
+          </ul>
+        </div>
+      </Section>
+
+      <div className="w-1 mt-10 h-[130px] border-2 border-gray-300" />
+
+      <div title="StackOverflow" className="pl-0 mt-4">
+        <h2 className="text-xl">StackOverflow</h2>
+
+        <div className="flex justify-between items-center font-bold border-b-2 border-gray-300 pb-1">
+          <p className='text-lg'>24k &nbsp;&nbsp;</p>
+
+          <ul className="flex gap-1">
+            {stackOverflowBadges.map(({ name, value, color }) => (
+              <li key={name}>
+                <span
+                  style={{ background: `${color}` }}
+                  className={`w-3 h-3 rounded-full inline-flex items-center justify-center text-xl font-bold`}
+                />
+                &nbsp;{value}&nbsp;
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-1">
+          <div className="space-y-2">
+            <div className="flex flex-col gap-0">
+              <div className="flex w-full text-xs items-center justify-between px-2">
+                <p>(Tags)</p>
+                <p>(Score)</p>
+              </div>
+              <div className="flex w-full items-center justify-between px-3 text-sm font-bold">
+                <FaGit
+                  size="22"
+                  className=" text-zinc-700 dark:text-zinc-300"
+                />
+                <p>1403</p>
+              </div>
+              <div className="flex w-full items-center justify-between px-3 text-sm font-bold">
+                <FaJs size="22" className=" text-zinc-700 dark:text-zinc-300" />
+                <p>171</p>
+              </div>
+              <div className="flex w-full items-center justify-between px-3 text-sm font-bold">
+                <FaReact
+                  size="22"
+                  className=" text-zinc-700 dark:text-zinc-300"
+                />
+                <p>210</p>
+              </div>
+              {/* <div className="flex w-full items-center justify-between">
+                <FaVuejs size="24" />
+                <p>146</p>
+              </div> */}
+            </div>
+          </div>
         </div>
       </div>
-      <div className="md:flex text-sm">
-        <div className="w-full">
-          <>
-            <span className="font-bold w-40">Testing</span>: &nbsp;
-            <p className="inline">
-              Cypress, Jest, Puppeteer – ensuring code quality and robustness
-              through comprehensive e2e/unit testing.
-            </p>
-          </>
-        </div>
-      </div>
-      <div className="md:flex text-sm">
-        <div className="w-full">
-          <>
-            <span className="font-bold w-40">UI/UX</span>: &nbsp;
-            <p className="inline">
-              Deliver pixel-perfect figma design implementation using CSS
-              (Tailwind, styled-components, SCSS, Bootstrap, and Bulma).
-            </p>
-          </>
-        </div>
-      </div>
-      <div className="md:flex text-sm">
-        <div className="w-full">
-          <>
-            <span className="font-bold w-40">Data Visualization</span>: &nbsp;
-            <p className="inline">
-              Create engaging, interactive visualizations for large-scale
-              datasets using D3.js.
-            </p>
-          </>
-        </div>
-      </div>
-      <div className="md:flex text-sm">
-        <div className="w-full">
-          <>
-            <span className="font-bold w-40">Performance and SEO</span>: &nbsp;
-            <p className="inline">
-              Specialize in optimizing Next.js apps to enhance web performance,
-              Core Web Vitals, and SEO rankings, achieving lightning-fast load
-              times.
-            </p>
-          </>
-        </div>
-      </div>
-      <div className="md:flex text-sm">
-        <div className="w-full">
-          <>
-            <span className="font-bold w-40">Blockchain and Web3</span>: &nbsp;
-            <p className="inline">
-              Experience in building decentralized applications (dApps) using
-              blockchain technologies, with hands-on experience in NFT apps,
-              Web3 libraries, and exploring cutting-edge projects in the
-              blockchain space.
-            </p>
-          </>
-        </div>
-      </div>
-      <div className="md:flex text-sm">
-        <div className="w-full">
-          <>
-            <span className="font-bold w-40">Additional Skills</span>: &nbsp;
-            <p className="inline">
-              Node.js, Vue.js, HTML5, SSR, Webflow, Prettier, WebSocket, Docker,
-              RESTful/GraphQL/RPC APIs, AWS.
-            </p>
-          </>
-        </div>
-      </div>
-    </Section>
+    </div>
   );
 }

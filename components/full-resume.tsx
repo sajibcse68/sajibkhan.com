@@ -6,8 +6,9 @@ import HeaderSection from '@/components/sections/HeaderSection';
 import SkillSection from '@/components/sections/SkillSection';
 import WorkSection from '@/components/sections/WorkSection';
 import ProjectSection from '@/components/sections/ProjectSection';
-import EducationSection from '@/components/sections/education-section';
+import EducationSection from '@/components/sections/EducationSection';
 import { RESUME_TYPES } from '@/components/constants';
+
 
 type Props = {
   usage: 'live' | 'pdf';
