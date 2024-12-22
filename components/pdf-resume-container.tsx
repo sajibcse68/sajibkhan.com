@@ -20,7 +20,7 @@ export default function PDFResumeContainer({
   return (
     <div
       ref={componentRef}
-      className={cn('mt-12', robotoCondensed.className)}
+      className={cn('mt-4', robotoCondensed.className)}
     >
       {children}
     </div>

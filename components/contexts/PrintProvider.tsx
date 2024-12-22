@@ -17,15 +17,17 @@ export const PrintContext = createContext<PrintContext>({
 
 export default function PrintProvider({ children }: { children: ReactNode }) {
   const componentRef = useRef(null);
+
   const handlePrint = useReactToPrint({
     // wait animation or image loading for a while before printing?
-    // onBeforePrint: () => {
-    //   return new Promise<void>((resolve) => {
-    //     setTimeout(() => {
-    //       resolve();
-    //     }, 1500);
-    //   });
-    // },
+    onBeforePrint: () => {
+      return new Promise<void>((resolve) => {
+        setTimeout(() => {
+          resolve();
+        }, 2500);
+      });
+    },
+    documentTitle: `Resume-sajib-khan`,
     onPrintError: (error) => console.log('>>> error: ', error),
 
     contentRef: componentRef,

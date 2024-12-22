@@ -12,6 +12,7 @@ type Props = {
 
 export default function ActionButton({ text, className, usage }: Props) {
   const { handlePrint } = usePrint();
+
   return usage === "live" ? (
     <Button onClick={handlePrint} className={className}>
       {text}

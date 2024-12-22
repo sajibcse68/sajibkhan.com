@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 function HeroSection() {
   return (
-    <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-white to-white dark:from-blue2-900 dark:to-blue2-900 transition-colors duration-300">
+    <div className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-white to-white dark:from-blue2-900 dark:to-blue2-900 transition-colors duration-300">
       {/** <!-- Animated Background Patterns --> */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0">
         {/** <!-- Gradient Overlay --> */}
         {/* <div className="absolute inset-0 bg-gradient-to-br from-gray-500/10 via-blue-500/10 to-gray-900/10 dark:from-gray-900/50 dark:via-blue-500/20 dark:to-gray-900/50 backdrop-blur-sm"></div> */}
 

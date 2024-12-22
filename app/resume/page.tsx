@@ -4,6 +4,10 @@ import FullResume from '@/components/full-resume';
 import PrintProvider from '@/components/contexts/PrintProvider';
 import PDFResumeContainer from '@/components/pdf-resume-container';
 
+// components
+import Resume from '@/components/Resume';
+import ActionButton from '@/components/action-button';
+
 // utils
 import { cn } from '@/utils/common';
 
@@ -27,20 +31,34 @@ export async function generateMetadata() {
 export default function ResumePage() {
   return (
     <div className="flex justify-center sm:px-8">
-      <div className="flex w-full max-w-7xl lg:px-8">
+      <div className="flex w-full max-w-7xl lg:px-4 relative">
         <div
           className={cn(
-            'w-full bg-zinc-50/90 ring-1 ring-zinc-100 dark:bg-zinc-900/80 dark:ring-zinc-400/20',
+            'w-full bg-white ring-1 ring-zinc-100 py-16 dark:bg-zinc-900 dark:ring-zinc-400/20',
             roboto.className
           )}
         >
           <PrintProvider>
             <div className="hidden">
               <PDFResumeContainer>
-                <FullResume usage="pdf" />
+                <Resume usage="pdf" />
+
+                {/* <FullResume usage="pdf" /> */}
               </PDFResumeContainer>
             </div>
-            <FullResume usage="live" />
+
+            {/* <FullResume usage="live" /> */}
+            <div>
+              <div className="absolute right-4 top-4 m-0 mx-auto hidden justify-center md:flex lg:right-12">
+                <ActionButton
+                  text="Download Resume"
+                  className="block"
+                  usage="live"
+                />
+              </div>
+
+              <Resume usage="live" />
+            </div>
           </PrintProvider>
         </div>
       </div>

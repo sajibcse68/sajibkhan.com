@@ -1,71 +1,102 @@
-import { Icons } from '@/components/icons';
-import { SocialLink } from '@/components/social-link';
-import Link from 'next/link';
-import ActionButton from '@/components/action-button';
-import { cn } from '@/utils/common';
-import { RESUME_TYPES } from '../constants';
-import Image from 'next/image';
+'use client';
 
-const { LIVE } = RESUME_TYPES;
+import Link from 'next/link';
+import {
+  FaEnvelope,
+  FaPhone,
+  FaGithub,
+  FaLinkedin,
+  FaStackOverflow,
+} from 'react-icons/fa';
+import { SectionHeaderTitle } from '@/components/resume/SectionHeaderTitle';
 
 type Props = {
-  usage: 'live' | 'pdf';
+  usage?: 'live' | 'pdf';
 };
+
+const summary = [
+  '10 years driving frontend development, ensuring best practices & performance.',
+  'Expert in JavaScript (10), React (7), Redux (7), TypeScript (5), Next.js (5), CSS3 & Git.',
+  'Proven problem-solver with exceptional debugging skills, self-driven, proactive.',
+  'Working in USA/UK/Europe companies as a full-time since 2019.',
+];
+
+const leftColumn = () => (
+  <div className="w-full md:w-[28%] flex flex-col justify-center md:justify-start items-center md:items-start">
+    <div className="flex justify-center md:justify-start items-start">
+      <h1 className="text-3xl font-bold text-black dark:text-white">
+        Sajib Khan
+      </h1>
+      <div className="flex items-center mt-1 ml-3 text-zinc-700 dark:text-zinc-400">
+        <Link href="https://www.linkedin.com/in/sajibkhan" target="_blank">
+          <FaLinkedin className="h-6 w-6" />
+        </Link>
+
+        <Link
+          href="https://github.com/sajibcse68"
+          target="_blank"
+          className="ml-2"
+        >
+          <FaGithub className="h-6 w-6 " />
+        </Link>
+
+        <Link
+          href="https://stackoverflow.com/users/4133798/sajib-khan"
+          className="ml-1"
+          target="_blank"
+        >
+          <FaStackOverflow className="h-6 w-6" />
+        </Link>
+      </div>
+    </div>
+    <h2 className="text-xl mb-2 ">Lead Software Engineer</h2>
+
+    <div className="space-y-2 text-zinc-800 dark:text-zinc-400">
+      <div className="flex items-center gap-2">
+        <FaEnvelope />
+        <span>sajibcse68@gmail.com</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <FaPhone />
+        <span>+8801798500100</span>
+      </div>
+    </div>
+  </div>
+);
+
+const rightColumn = () => (
+  <div className="w-full md:w-[72%]">
+    <div className="bg-[#f1f8ff] pl-6 pr-2 py-2 rounded-lg dark:bg-zinc-800">
+      <SectionHeaderTitle
+        title="Professional Summary"
+        classes={['text-center mt-0']}
+      />
+
+      <p className="text-base text-zinc-900 dark:text-zinc-400">
+        {summary.map((sum, index) => (
+          <li key={index}>{sum}</li>
+        ))}
+      </p>
+    </div>
+  </div>
+);
 
 export default function HeaderSection({ usage }: Props) {
   return (
-    <section>
-      <div className="flex justify-between items-center">
-        <div className="flex items-center">
-          <h2 className="text-2xl font-bold mr-4 my-1">SAJIB KHAN</h2>
-          <SocialLink
-            href="https://github.com/sajibcse68"
-            platform="github"
-            aria-label="My GitHub"
-            className="mx-1 h-6 w-6"
-          />
-          <SocialLink
-            href="https://www.linkedin.com/in/sajibkhan"
-            platform="linkedin"
-            aria-label="My LinkedIn"
-            className="mx-1 h-6 w-6"
-          />
+    <>
+      <section className="flex flex-col md:hidden gap-4">
+        {leftColumn()}
 
-          <Link href="https://stackoverflow.com/users/4133798/sajib-khan" >
-            <Image
-              src="/images/stackoverflow.svg"
-              alt="stackoverflow"
-              height={28}
-              width={28}
-              className="h-5 w-5"
-              priority
-              unoptimized
-            />
-          </Link>
-        </div>
-        <ActionButton
-          text={usage === LIVE ? 'Download Resume' : 'View Live Resume'}
-          usage={usage}
-          className={cn(usage === LIVE && 'hidden sm:block')}
-        />
-      </div>
+        {/* right column */}
+        {rightColumn()}
+      </section>
 
-      <div className="flex flex-wrap gap-4 gap-y-1 text-sm">
-        <Link
-          href="mailto:sajibcse68@gmail.com"
-          className="group flex gap-2 items-center text-zinc-400 transition hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
-        >
-          <Icons.Mail size={14} className="group-hover:animate-shake" />
-          sajibcse68@gmail.com
-        </Link>
-        <Link
-          href="tel:+8801798500100"
-          className="group flex gap-2 items-center text-zinc-400 transition hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
-        >
-          <Icons.PhoneCall size={14} className="group-hover:animate-shake" />
-          +(880) 1798500100
-        </Link>
-      </div>
-    </section>
+      <section className="hidden md:flex gap-4">
+        {leftColumn()}
+
+        {/* right column */}
+        {rightColumn()}
+      </section>
+    </>
   );
 }
