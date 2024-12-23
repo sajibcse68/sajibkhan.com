@@ -8,7 +8,7 @@ export default function Experience({
   return (
     <div className="[&:not(:first-child)]:mt-1">
       <div className="text-[15px] flex justify-between flex-wrap text-zinc-700 dark:text-zinc-300">
-        <div className="flex gap-x-2 flex-wra">
+        <div className="flex gap-x-2 flex-wrap">
           <div className="font-semibold text-zinc-900 dark:text-zinc-200">
             {head1}
           </div>

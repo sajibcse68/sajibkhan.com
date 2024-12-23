@@ -4,11 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ThemeSwitcher } from '@/components/theme/ThemeSwitcher';
-import {
-  Dialog,
-  DialogPanel,
-  PopoverGroup,
-} from '@headlessui/react';
+import { Dialog, DialogPanel, PopoverGroup } from '@headlessui/react';
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -18,10 +14,7 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
-import {
-  PhoneIcon,
-  PlayCircleIcon,
-} from '@heroicons/react/20/solid';
+import { PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 
 // utils
 import { cn } from '@/utils/common';
@@ -118,7 +111,10 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <nav aria-label="Global" className="col-span-1 md:col-span-2 lg:col-span-9">
+      <nav
+        aria-label="Global"
+        className="col-span-1 md:col-span-2 lg:col-span-9"
+      >
         <div className="flex lg:flex-1"></div>
         <div className="flex lg:hidden">
           <button
@@ -139,7 +135,7 @@ export default function Navbar() {
         </PopoverGroup>
       </nav>
 
-      <div className="hidden right-0 lg:flex lg:justify-end">
+      <div className="hidden lg:flex right-0 lg:justify-end">
         <div className="w-12 h-10 pointer-events-auto">
           <ThemeSwitcher />
         </div>
@@ -151,7 +147,10 @@ export default function Navbar() {
       >
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:bg-blue2-900">
-          <div className="flex items-center justify-between" onClick={() => setMobileMenuOpen(false)}>
+          <div
+            className="flex items-center justify-between"
+            onClick={() => setMobileMenuOpen(false)}
+          >
             <Link
               className={cn(
                 'text-primary underlined block whitespace-nowrap text-2xl font-medium transition hover:text-team-current focus:text-team-current focus:outline-none',
@@ -184,6 +183,10 @@ export default function Navbar() {
                     {link.name}
                   </NavLink>
                 ))}
+              </div>
+
+              <div className="flex justify-center pt-4 pointer-events-auto">
+                <ThemeSwitcher btnText="Switch theme" />
               </div>
             </div>
           </div>
