@@ -25,13 +25,13 @@ const exp: ExperienceProps[] = [
     ),
     head4: 'Jul \'21 - Pres.',
     bulletPoints: [
-      'Architected & developed complex user interfaces using React, Redux & Next.js.',
+      'Architected & developed complex user interfaces using React, Redux, Next.js.',
       'Migrated legacy codebase to the latest React.js, reducing load time by 30%.',
       'Translated pixel-perfect Figma designs into responsive interfaces using CSS (e.g. Styled-Components, Tailwind, SCSS).',
       'Provided technical leadership and mentoring to a team of talented engineers.',
       'Collaborated effectively with cross-functional teams (product, design, backend) to define and implement innovative product features.',
       'Ensure the delivery of high-quality code through rigorous code reviews, comprehensive testing, and adherence to industry best practices.',
-      'Optimized web applications for exceptional performance, accessibility, and SEO.',
+      'Optimized web applications for exceptional performance, accessibility & SEO.',
       'Proactively troubleshoot and debug critical issues, providing efficient and effective solutions.',
     ],
   },
@@ -50,10 +50,10 @@ const exp: ExperienceProps[] = [
     ),
     head4: 'Jul \'19 - Jun \'21',
     bulletPoints: [
-      'Develop, refactor, and extend features in a modern web application using technologies like React, Redux, Redux-Saga, Next.js, GraphQL, ES6+, CSS and more.',
-      'Implemented advanced charts and graphs with D3.js for enhanced data visualization.',
+      'Develop, refactor, and extend features in a modern web application using technologies like React, Redux, Redux-Saga, Next.js, GraphQL, ES6+, CSS.',
+      'Implemented advanced charts and graphs with D3.js.',
       'Lead and manage the frontend team in an Agile environment, fostering collaboration and maintaining productivity.',
-      'Migrated web application APIs from REST to GraphQL using tools like Axios, AWS AppSync, and Normalizr, resulting in improved performance and flexibility.',
+      'Migrated web application APIs from REST to GraphQL using tools like Axios, AWS AppSync, and Normalizr, improved performance and flexibility.',
     ],
   },
   {
@@ -75,7 +75,7 @@ const exp: ExperienceProps[] = [
 
 export default function WorkSection() {
   return (
-    <Section classes="w-full md:w-3/5" title="WORK EXPERIENCE">
+    <Section classes="w-full md:w-[59%] print:w-[59%]" title="WORK EXPERIENCE">
       <div className="space-y-4">
         <div className="">
           {exp.map((e, index) => (

@@ -54,7 +54,7 @@ const education: CertificateProps[] = [
 
 function Certificate({ title, link, org, time }: CertificateProps) {
   return (
-    <section className="text-base leading-[26px] text-zinc-700 dark:text-zinc-300">
+    <section className="text-base leading-[25px] text-zinc-700 dark:text-zinc-300">
       <div className="flex flex-wrap justify-between">
         <div className="flex gap-x-2 flex-wrap">
           <span>

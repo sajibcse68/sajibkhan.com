@@ -20,15 +20,15 @@ export default function PrintProvider({ children }: { children: ReactNode }) {
 
   const handlePrint = useReactToPrint({
     // wait animation or image loading for a while before printing?
-    onBeforePrint: () => {
-      return new Promise<void>((resolve) => {
-        setTimeout(() => {
-          resolve();
-        }, 2500);
-      });
-    },
+    // onBeforePrint: () => {
+    //   return new Promise<void>((resolve) => {
+    //     setTimeout(() => {
+    //       resolve();
+    //     }, 500);
+    //   });
+    // },
     documentTitle: `Resume-sajib-khan`,
-    onPrintError: (error) => console.log('>>> error: ', error),
+    onPrintError: (error) => console.log('error PrintProvider: ', error),
 
     contentRef: componentRef,
   });

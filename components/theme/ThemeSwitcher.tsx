@@ -20,7 +20,6 @@ const themes = [
   },
 ];
 export function ThemeSwitcher() {
-  const [mounted, setMounted] = React.useState(false);
   const [open, setOpen] = React.useState(false);
   const { setTheme, theme, resolvedTheme } = useTheme();
   const ThemeIcon = React.useMemo(
@@ -28,14 +27,8 @@ export function ThemeSwitcher() {
     [theme]
   );
 
-  React.useEffect(() => setMounted(true), []);
-
   function toggleTheme() {
     setTheme(resolvedTheme === "dark" ? "light" : "dark");
-  }
-
-  if (!mounted) {
-    return null;
   }
 
   return (

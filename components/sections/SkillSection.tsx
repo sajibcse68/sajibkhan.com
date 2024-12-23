@@ -47,9 +47,9 @@ export default function SkillSection() {
       <div className="w-1 mt-10 h-[130px] border-2 border-gray-300" />
 
       <div title="StackOverflow" className="pl-0 mt-4">
-        <h2 className="text-xl">StackOverflow</h2>
+        <h2 className="text-lg">StackOverflow</h2>
 
-        <div className="flex justify-between items-center font-bold border-b-2 border-gray-300 pb-1">
+        <div className="flex justify-between items-center font-bold border-b-2 border-gray-300">
           <p className='text-lg'>24k &nbsp;&nbsp;</p>
 
           <ul className="flex gap-1">

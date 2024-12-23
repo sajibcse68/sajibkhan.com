@@ -14,7 +14,7 @@ export default function LabelWithGraphic({
   content,
 }: Props) {
   return (
-    <div className="flex items-center gap-1.5">
+    <div className="flex items-center gap-1">
       {Icon && <Icon size={12} />}
       {image && (
         <Image

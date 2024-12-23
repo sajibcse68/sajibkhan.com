@@ -49,7 +49,7 @@ export default function ResumePage() {
 
             {/* <FullResume usage="live" /> */}
             <div>
-              <div className="absolute right-4 top-4 m-0 mx-auto hidden justify-center md:flex lg:right-12">
+              <div className="absolute right-4 top-4 m-0 mx-auto hidden justify-center md:flex print:flex lg:right-12">
                 <ActionButton
                   text="Download Resume"
                   className="block"

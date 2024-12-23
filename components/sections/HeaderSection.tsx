@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Link from 'next/link';
 import {
   FaEnvelope,
@@ -22,8 +23,8 @@ const summary = [
 ];
 
 const leftColumn = () => (
-  <div className="w-full md:w-[28%] flex flex-col justify-center md:justify-start items-center md:items-start">
-    <div className="flex justify-center md:justify-start items-start">
+  <div className="flex w-full flex-col items-center justify-center md:w-[28%] md:items-start md:justify-start print:w-[28%] print:items-start print:justify-start">
+    <div className="flex items-start justify-center md:justify-start print:justify-start">
       <h1 className="text-3xl font-bold text-black dark:text-white">
         Sajib Khan
       </h1>
@@ -65,7 +66,7 @@ const leftColumn = () => (
 );
 
 const rightColumn = () => (
-  <div className="w-full md:w-[72%]">
+  <div className="w-full md:w-[72%] print:w-[72%]">
     <div className="bg-[#f1f8ff] pl-6 pr-2 py-2 rounded-lg dark:bg-zinc-800">
       <SectionHeaderTitle
         title="Professional Summary"
@@ -82,16 +83,10 @@ const rightColumn = () => (
 );
 
 export default function HeaderSection({ usage }: Props) {
+
   return (
     <>
-      <section className="flex flex-col md:hidden gap-4">
-        {leftColumn()}
-
-        {/* right column */}
-        {rightColumn()}
-      </section>
-
-      <section className="hidden md:flex gap-4">
+      <section className="flex flex-col gap-4 md:flex-row print:flex-row">
         {leftColumn()}
 
         {/* right column */}
