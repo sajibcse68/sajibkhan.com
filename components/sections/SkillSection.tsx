@@ -33,8 +33,8 @@ export default function SkillSection() {
   ];
 
   return (
-    <div className="flex justify-between items-start">
-      <Section classes="text-zinc-900 dark:text-zinc-200" title="SKILLS">
+    <div className="flex flex-col md:flex-row justify-between items-start">
+      <Section classes="text-zinc-900 w-full md:w-auto dark:text-zinc-200" title="SKILLS">
         <div className="space-y-2">
           <ul className="grid grid-cols-2 gap-x-3 gap-y-1">
             {topSkills.map((skill) => (
@@ -44,9 +44,9 @@ export default function SkillSection() {
         </div>
       </Section>
 
-      <div className="w-1 mt-10 h-[130px] border-2 border-gray-300" />
+      <div className="hidden md:block w-1 mt-10 h-[130px] border-2 border-gray-300" />
 
-      <div title="StackOverflow" className="pl-0 mt-4">
+      <div className="pl-0 mt-4 w-2/3 md:w-auto">
         <h2 className="text-lg">StackOverflow</h2>
 
         <div className="flex justify-between items-center font-bold border-b-2 border-gray-300">
@@ -68,7 +68,7 @@ export default function SkillSection() {
         <div className="mt-1">
           <div className="space-y-2">
             <div className="flex flex-col gap-0">
-              <div className="flex w-full text-xs items-center justify-between px-2">
+              <div className="flex w-full items-center justify-between px-2 text-xs">
                 <p>(Tags)</p>
                 <p>(Score)</p>
               </div>
