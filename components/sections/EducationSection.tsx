@@ -34,7 +34,7 @@ function Education({ title, gpa, org, time }: EducationProps) {
           </div>
         </div>
 
-        <div className=" text-base text-zinc-700 dark:text-zinc-400">
+        <div className="text-sm text-zinc-700 dark:text-zinc-400">
           <LabelWithGraphic image={org.logo} content={org.name} />
         </div>
       </div>

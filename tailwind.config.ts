@@ -27,6 +27,7 @@ const config: Config = {
     extend: {
       screens: {
         '1.5xl': '1380px',
+        'print': {'raw': 'print'}
       },
       colors: {
         transparent: 'transparent',

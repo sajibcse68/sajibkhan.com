@@ -6,7 +6,7 @@ import { Icons } from '@/components/icons';
 // components
 import TitleWithLink from '@/components/resume/TitleWithLink';
 
-export default async function ProjectSection() {
+export default function ProjectSection() {
   const exp: ExperienceProps[] = [
     {
       head1: (

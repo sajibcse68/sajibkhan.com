@@ -140,7 +140,7 @@ export default function Navbar() {
       </nav>
 
       <div className="hidden right-0 lg:flex lg:justify-end">
-        <div className="pointer-events-auto">
+        <div className="w-12 h-10 pointer-events-auto">
           <ThemeSwitcher />
         </div>
       </div>
