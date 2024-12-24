@@ -4,7 +4,7 @@ import LabelWithGraphic from '@/components/label-with-graphic';
 // components
 import TitleWithLink from '@/components/resume/TitleWithLink';
 
-const education: CertificateProps[] = [
+const certificates: CertificateProps[] = [
   {
     title: 'Front End Libraries',
     org: {
@@ -71,8 +71,8 @@ export default function CertificateSection() {
   return (
     <Section title="CERTIFICATES" classes="relative">
       <div className="flex flex-row flex-wrap justify-between gap-y-1">
-        {education.map((e, index) => (
-          <Certificate key={index} {...e} />
+        {certificates.map((cert, index) => (
+          <Certificate key={index} {...cert} />
         ))}
       </div>
 
