@@ -14,10 +14,10 @@ type Props = {
 };
 
 const summary = [
-  '10 years driving frontend development, ensuring best practices & performance.',
-  'Expert in JavaScript (10), React (7), Redux (7), TypeScript (5), Next.js (5), CSS3 & Git.',
-  'Proven problem-solver with exceptional debugging skills, self-driven, proactive.',
-  'Working in USA/UK/Europe companies as a full-time since 2019.',
+  '10+ years driving frontend development, developing scalable web applications.',
+  'Expert in JavaScript (10Y), React/Redux (7Y), TypeScript/Next.js (5Y), Modern CSS & Git.',
+  'Proven track record in resolving complex issues through debugging and optimization.',
+  'Consistent experience working with USA, UK, and European companies since 2019.',
 ];
 
 export default function HeaderSection({ usage }: Props) {

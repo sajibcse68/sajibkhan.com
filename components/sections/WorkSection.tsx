@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Section from './Section';
 
 import Experience from '@/components/Experience';
@@ -6,7 +5,6 @@ import LabelWithGraphic from '@/components/label-with-graphic';
 import { Icons } from '@/components/icons';
 
 // components
-import { SectionHeaderTitle } from '@/components/resume/SectionHeaderTitle';
 import TitleWithLink from '@/components/resume/TitleWithLink';
 
 const exp: ExperienceProps[] = [
@@ -25,14 +23,11 @@ const exp: ExperienceProps[] = [
     ),
     head4: '07/21 - Pres.',
     bulletPoints: [
-      'Architected & developed complex user interfaces using React, Redux, Next.js.',
-      'Migrated legacy codebase to the latest React.js, reducing load time by 30%.',
-      'Translated pixel-perfect Figma designs into responsive interfaces using CSS (e.g. Styled-Components, Tailwind, SCSS).',
-      'Provided technical leadership and mentoring to a team of talented engineers.',
-      'Collaborated effectively with cross-functional teams (product, design, backend) to define and implement innovative product features.',
-      'Ensure the delivery of high-quality code through rigorous code reviews, comprehensive testing, and adherence to industry best practices.',
-      'Optimized web applications for exceptional performance, accessibility & SEO.',
-      'Proactively troubleshoot and debug critical issues, providing efficient and effective solutions.',
+      'Led a full UI/UX revamp that boosted application performance by 30% via React optimization, lazy loading and render blocking minimization.',
+      'Architected a scalable system using React, Redux, Next.js & TypeScript.',
+      'Delivered pixel-perfect, responsive interfaces from Figma designs using modern CSS methodologies.',
+      'Mentored a 4-member frontend team, improving sprint velocity by 40%.',
+      'Collaborated with cross-functional teams to launch seven high-impact product features.',
     ],
   },
   {
@@ -50,10 +45,11 @@ const exp: ExperienceProps[] = [
     ),
     head4: '07/19 - 06/21',
     bulletPoints: [
-      'Develop, refactor, and extend features in a modern web application using technologies like React, Redux, Redux-Saga, Next.js, GraphQL, ES6+, CSS.',
-      'Implemented advanced charts and graphs with D3.js.',
-      'Lead and manage the frontend team in an Agile environment, fostering collaboration and maintaining productivity.',
-      'Migrated web application APIs from REST to GraphQL using tools like Axios, AWS AppSync, and Normalizr, improved performance and flexibility.',
+      'Designed and developed 100+ reusable React components across SaaS app.',
+      'Developed and enhanced modern web applications using React, Context API, GraphQL, ES6+ & Styled-components, ensuring clean and maintainable code.',
+      'Developed interactive data visualizations with D3.js while maintaining smooth user experience.',
+      'Migrated APIs from REST to GraphQL using Axios, AWS AppSync & Normalizr, improving API efficiency, flexibility, and reducing load time by 20%.',
+      'Manage the frontend team in an Agile environment, fostering collaboration and maintaining productivity.',
     ],
   },
   {
@@ -68,7 +64,8 @@ const exp: ExperienceProps[] = [
     ),
     head4: '11/14 - 06/19',
     bulletPoints: [
-      'Developed Kubernetes Dashboard for AppsCode using Vue.js 2, Vuex, JavaScript, Axios. Designed & developed thousands of Vue Components from scratch, reuse the components, State reactive using Vuex, used Vue Plugins/Filtering/Mixins, etc.',
+      'Developed Kubernetes Dashboard leveraging Vue.js 2, Vuex with 95% reusable components. Automated testing using Jenkins CI.',
+      'Crafted a responsive website for appscode.com utilizing Hugo. Developed a chrome extension.',
     ],
   },
 ];
