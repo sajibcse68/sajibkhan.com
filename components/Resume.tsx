@@ -28,20 +28,20 @@ const ResumeNew = React.forwardRef(({ usage }: Props, ref) => {
     <div
       className={cn(
         robotoCondensed.className,
-        'relative mx-auto bg-white px-4 pt-1 dark:bg-zinc-900 md:h-[30.5cm] md:w-[24cm] print:h-[30.5cm] print:w-[24cm]'
+        'relative max-w-xl bg-white px-4 pt-1 dark:bg-zinc-900 lg:mx-auto lg:h-[30.5cm] lg:w-[24cm] lg:max-w-7xl print:h-[30.5cm] print:w-[24cm] print:max-w-7xl'
       )}
     >
       {/* top section */}
       <HeaderSection />
 
       {/* mid section */}
-      <div className="flex flex-col gap-4 md:flex-row print:flex-row">
+      <div className="flex flex-col gap-4 lg:flex-row print:flex-row">
         {/* Left Column - Experience */}
 
         <WorkSection />
 
         {/* Right Column - Skills, Education, etc. */}
-        <div className="w-full md:w-[41%] print:w-[41%]">
+        <div className="w-full lg:w-[41%] print:w-[41%]">
           <SkillSection />
 
           <CertificateSection />
@@ -55,7 +55,7 @@ const ResumeNew = React.forwardRef(({ usage }: Props, ref) => {
       {/* Bottom Section */}
       <AdditionalSkills />
 
-      <p className="absolute bottom-0 right-0 mr-2">v7.0.1</p>
+      <p className="absolute bottom-0 right-0 mr-2">v7.1.0</p>
     </div>
   );
 });

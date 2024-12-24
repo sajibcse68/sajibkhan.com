@@ -15,7 +15,7 @@ export function SectionHeaderTitle({
   return (
     <h2
       className={cn(
-        'text-xl mt-1 font-semibold text-gray-900 dark:text-white',
+        'mt-6 text-xl font-semibold text-gray-900 dark:text-white lg:mt-1 print:mt-1',
         ...classes
       )}
     >

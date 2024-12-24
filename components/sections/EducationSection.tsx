@@ -24,11 +24,11 @@ const education: EducationProps[] = [
 
 function Education({ title, gpa, org, time }: EducationProps) {
   return (
-    <section className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">
+    <section className="text-sm font-semibold">
       <div className="">
         <div className="text-base font-semibold flex flex-wrap justify-between">
           <div className="flex gap-x-4 flex-wrap">
-            <span className="font-bold text-black dark:text-white">
+            <span className="font-bold text-zinc-900 dark:text-zinc-200">
               {title}
             </span>
           </div>

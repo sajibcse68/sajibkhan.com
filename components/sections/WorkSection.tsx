@@ -23,7 +23,7 @@ const exp: ExperienceProps[] = [
         link="https://www.goava.com"
       />
     ),
-    head4: 'Jul \'21 - Pres.',
+    head4: '07/21 - Pres.',
     bulletPoints: [
       'Architected & developed complex user interfaces using React, Redux, Next.js.',
       'Migrated legacy codebase to the latest React.js, reducing load time by 30%.',
@@ -48,7 +48,7 @@ const exp: ExperienceProps[] = [
         link="https://www.goava.com"
       />
     ),
-    head4: 'Jul \'19 - Jun \'21',
+    head4: '07/19 - 06/21',
     bulletPoints: [
       'Develop, refactor, and extend features in a modern web application using technologies like React, Redux, Redux-Saga, Next.js, GraphQL, ES6+, CSS.',
       'Implemented advanced charts and graphs with D3.js.',
@@ -66,7 +66,7 @@ const exp: ExperienceProps[] = [
     head2: (
       <TitleWithLink title="AppsCode Inc. 🇺🇸" link="https://appscode.com" />
     ),
-    head4: 'Nov \'14 - Jun \'18',
+    head4: '11/14 - 06/19',
     bulletPoints: [
       'Developed Kubernetes Dashboard for AppsCode using Vue.js 2, Vuex, JavaScript, Axios. Designed & developed thousands of Vue Components from scratch, reuse the components, State reactive using Vuex, used Vue Plugins/Filtering/Mixins, etc.',
     ],
@@ -75,7 +75,7 @@ const exp: ExperienceProps[] = [
 
 export default function WorkSection() {
   return (
-    <Section classes="w-full md:w-[59%] print:w-[59%]" title="WORK EXPERIENCE">
+    <Section classes="w-full lg:w-[59%] print:w-[59%]" title="WORK EXPERIENCE">
       <div className="space-y-4">
         <div className="">
           {exp.map((e, index) => (

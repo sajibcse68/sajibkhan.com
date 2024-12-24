@@ -33,8 +33,11 @@ export default function SkillSection() {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start">
-      <Section classes="text-zinc-900 w-full md:w-auto dark:text-zinc-200" title="SKILLS">
+    <div className="flex w-full max-w-xs flex-col items-start justify-between lg:w-auto lg:max-w-none lg:flex-row print:max-w-none print:flex-row">
+      <Section
+        classes="text-zinc-900 w-full lg:w-auto print:w-auto dark:text-zinc-200"
+        title="SKILLS"
+      >
         <div className="space-y-2">
           <ul className="grid grid-cols-2 gap-x-3 gap-y-1">
             {topSkills.map((skill) => (
@@ -44,13 +47,13 @@ export default function SkillSection() {
         </div>
       </Section>
 
-      <div className="hidden md:block w-1 mt-10 h-[130px] border-2 border-gray-300" />
+      <div className="mt-10 hidden h-[130px] w-1 border-2 border-gray-300 lg:block print:block" />
 
-      <div className="pl-0 mt-4 w-2/3 md:w-auto">
+      <div className="pl-0 mt-4 w-full lg:w-auto print:w-auto">
         <h2 className="text-lg">StackOverflow</h2>
 
         <div className="flex justify-between items-center font-bold border-b-2 border-gray-300">
-          <p className='text-lg'>24k &nbsp;&nbsp;</p>
+          <p className="text-lg">24k &nbsp;&nbsp;</p>
 
           <ul className="flex gap-1">
             {stackOverflowBadges.map(({ name, value, color }) => (

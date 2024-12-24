@@ -27,6 +27,7 @@
     "react-dom": "^18",
     "react-icons": "^5.4.0",
     "react-to-print": "^3.0.2",
+    "react-tooltip": "^5.28.0",
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
