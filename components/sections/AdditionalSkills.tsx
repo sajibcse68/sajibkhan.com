@@ -5,13 +5,13 @@ import Experience from '@/components/Experience';
 const exp: ExperienceProps[] = [
   {
     bulletPoints: [
-      'Strong experience on E6+, React hooks/context, Redux-saga, D3.js, GraphQL, Vue.js and Node.js.',
-      'Deep understanding of JS, React - allowing me to write clean, efficient & maintainable codes leveraging the latest features.',
-      'Pixel-perfect Figma design implementation using CSS (TailwindCSS, styled-components, SCSS, Bootstrap, Bulma, etc.).',
-      'Proficient in e2e/unit testing with frameworks like Cypress, Jest, Puppeteer, Mocha.',
-      'Experience in Blockchain, Web3, NFTs, and DeFi!',
-      'Strong problem solver & debugger - former participants in ICPC, NCPC competetive programming contests!',
-      "I've led multiple frontend teams & mentored over 50 developers in my career.",
+      'Extensive experience with ES6+, React (hooks/context), Redux (+redux-saga), D3.js, GraphQL, Vue.js, and Node.js.',
+      'Master-level expertise in JavaScript/React architecture, delivering clean, efficient & scalable code using latest industry practices.',
+      'Skilled in implementing pixel-perfect, responsive designs from Figma using CSS (TailwindCSS, styled-components, SCSS, etc.).',
+      'Strong testing expertise using Cypress for E2E, Jest for unit testing, and Puppeteer/JenkinsCI for automations.',
+      'Hands-on experience with Blockchain, Web3, NFTs, and Decentralized Finance (DeFi) technologies.',
+      'Strong problem-solving and debugging skills, sharpened through competitive programming (ICPC/NCPC participation).',
+      "Proven technical leadership - successfully led frontend teams and mentored 50+ developers in my career.",
     ],
   },
 ];
