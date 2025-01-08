@@ -15,6 +15,7 @@ export const getBlogsMetadata = (basePath: string) => {
       categories: matterResult.data.categories,
       date: matterResult.data.date,
       description: matterResult.data.description,
+      cover_image: matterResult.data.cover_image,
       slug: filename.replace('.md', ''),
       title: matterResult.data.title,
     };

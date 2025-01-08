@@ -8,21 +8,24 @@ type BlogCardProps = {
     slug: string;
     title: string;
     description: string;
+    cover_image: string;
     date: string;
     categories: string;
   };
 };
 
 function BlogCard({ blog }: BlogCardProps) {
-  const { slug, title, description, date, categories } = blog;
+  const { slug, title, description, cover_image, date, categories } = blog;
   const readingTime = getReadingTime(getBlogContent(slug)?.content ?? '');
+
+  const coverImageUrl = cover_image ? cover_image : `/images/blogs/${slug}.webp`;
 
   return (
     <Link href={`/blog/${slug}`}>
       <article className="group h-full cursor-pointer rounded-2xl border border-gray-300 bg-white shadow-lg hover:shadow-2xl hover:ring-2 hover:ring-blue-500 dark:border-white2-80 dark:bg-white2-40">
         <div className="rounded-t-2xl aspect-[16/9]">
           <Image
-            src={`/images/blogs/${slug}.webp`}
+            src={coverImageUrl}
             width="500"
             height="500"
             alt="Blog Title"
