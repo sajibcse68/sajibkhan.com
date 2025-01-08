@@ -5,11 +5,8 @@ cook_time: "60 minutes"
 date: "2024-12-04"
 description: "Create a dedicated workspace. Find a quiet, comfortable space separate from relaxation areas to stay focused."
 categories:
-  - learning
-meta:
-  keywords:
-    - teaching
-    - learning
+  - coding
+  - productivity
 ---
 
 ![Mastering Productivity While Working From Home!](/images/blogs/mastering-productivity-while-working-from-home.webp "Mastering Productivity While Working From Home!")
