@@ -1,7 +1,7 @@
 ---
 title: '30 Pro Tips from a Senior Frontend Dev'
 date: '2025-05-01'
-description: 'A comprehensive guide distilling a decade of frontend development experience into 30 actionable tips. From mastering core fundamentals and optimizing performance to advancing your career and maintaining work-life balance, this guide covers essential practices for modern frontend developers. Whether you are starting your journey or looking to level up, these battle-tested insights will help you become a more effective and well-rounded developer'
+description: 'A comprehensive guide distilling a decade of frontend development experience into 30 actionable tips. From mastering core fundamentals and optimizing performance to advancing your career and maintaining work-life balance, this guide covers essential practices for modern frontend developers. Whether you are starting your journey or looking to level up, these battle-tested insights will help you become a more effective and well-rounded developer.'
 categories:
   - javascript
   - web development

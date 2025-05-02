@@ -18,24 +18,24 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    img: 'https://media.licdn.com/dms/image/v2/D4D03AQE8bihBDeXjSA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1680464501323?e=1739404800&v=beta&t=e-rn3nMMdIcaIS3K-i_h_l6zglajRm-d2wKZBKg-FgQ',
     name: 'Håkan Höglund',
+    img: '/images/people/håkan-höglund.jpeg',
     designation: 'Chief Technology Officer at Goava',
     caption: 'May 16, 2022, Håkan managed 𝐒𝐚𝐣𝐢𝐛 directly',
     text: "I have had the privilege of working with Sajib Khan in his role as Lead Software Engineer at Goava Sales Intelligence AB. Sajib reports to me directly. Sajib joined Goava in July 2019 as Senior Software Engineer leading the front-end development team. Sajib is a very talented engineer and a dedicated and hard working employee. He is highly skilled in technologies such as JavaScript, React.js, Next.js, TypeScript, Redux, etc. Sajib is also a very capable project lead and well-versed in agile methodologies. He is a key employee at Goava and I'm certain he would perform well in any similar role.",
     linkedinLink: 'https://www.linkedin.com/in/h%C3%A5kan-h%C3%B6glund-03ba622',
   },
   {
-    img: 'https://media.licdn.com/dms/image/v2/C4D03AQHv4UdLUltB0g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1541607758417?e=1739404800&v=beta&t=SwuvvMhsvmBJwfTa1LRis51OH_d5PKAC7S8ZNNQ_0js',
     name: 'Anton Weihard',
+    img: '/images/people/anton-weihard.jpeg',
     designation: 'CEO & Co-Founder at Goava',
     caption: 'April 24, 2022, Anton worked with 𝐒𝐚𝐣𝐢𝐛 on the same team',
     text: 'I’m really happy to be working with Sajib. He’s a great leader with an fantastic eye for solving problems and with a strong commitment to the work he puts in. With a good understanding of user stories he helps me as a product manager to solve problems for our customers and making the product better in each and every sprint. He is also a very kind and caring person which makes him appreciate by me and his other colleagues.',
     linkedinLink: 'https://www.linkedin.com/in/anton-weihard',
   },
   {
-    img: 'https://media.licdn.com/dms/image/v2/D4D03AQGvo8zoJGRyXg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730995861446?e=1739404800&v=beta&t=h5VRtD-Zbt10RRqFEGUXry91872ljiX74jvXivNAdLs',
     name: 'Vanna Pettersson',
+    img: '/images/people/vanna-pettersson.jpeg',
     designation:
       'Product Manager | eCommerce and Transportation | Posten Bring Group',
     caption: 'October 10, 2021, Vanna worked with 𝐒𝐚𝐣𝐢𝐛 but on different teams',
@@ -43,8 +43,8 @@ const testimonials: Testimonial[] = [
     linkedinLink: 'https://www.linkedin.com/in/vanna-pettersson-b4020b128',
   },
   {
-    img: 'https://media.licdn.com/dms/image/v2/D5603AQEDNeZ7znGcEw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1704561616479?e=1739404800&v=beta&t=QA1FzeNU_8SZeG0QE-EQ64wrYS5G4ZxO5x0wfwUfmPY',
     name: 'Arman Bhuiyan',
+    img: '/images/people/arman-bhuiyan.png',
     designation:
       'Smart Contract Security Researcher. Previously CTO @wind.app, CTO @Concourse Open Community',
     caption: 'September 21, 2019, Arman worked with 𝐒𝐚𝐣𝐢𝐛 on the same team',
@@ -52,16 +52,16 @@ const testimonials: Testimonial[] = [
     linkedinLink: 'https://www.linkedin.com/in/arman-bhuiyan',
   },
   {
-    img: 'https://media.licdn.com/dms/image/v2/D4E03AQEIRmneCBnHWw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724446055111?e=1739404800&v=beta&t=DeUIC2fhsocILeQeecsi4kH7dT3djEelLjlfJdKGrzA',
     name: 'Sadlil Rhythom',
+    img: '/images/people/sadlil-rhythom.jpeg',
     designation: 'Senior Software Engineer, Tech Lead @ Google',
     caption: 'May 29, 2019, Sadlil worked with 𝐒𝐚𝐣𝐢𝐛 on the same team',
     text: 'Sajib is a really talented and organised guy. He is also a great team player, always pushing himself to learn and grow in his career.  He posses deep knowledge and expert skills in various frontend technologies like javascript, react, vue.js etc. I had the opportunity to work with him for several projects. The professionalism and quality of his work is very impressive.',
     linkedinLink: 'https://www.linkedin.com/in/sadlil',
   },
   {
-    img: 'https://media.licdn.com/dms/image/v2/D5603AQGsYFc5a2iILg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701504528944?e=1739404800&v=beta&t=QKWgpEEDiDnxsap9FPVu0pF-vMBeK3Vaeziffnu6KNs',
     name: 'Anwarul Azim Shishir',
+    img: '/images/people/anwarul-azim-shishir.jpeg',
     designation: 'Business Operations & SCM',
     caption:
       'February 28, 2017, Anwarul Azim worked with 𝐒𝐚𝐣𝐢𝐛 on the same team',
@@ -69,8 +69,8 @@ const testimonials: Testimonial[] = [
     linkedinLink: 'https://www.linkedin.com/in/anwarul-azim-s-21b20682/',
   },
   {
-    img: 'https://media.licdn.com/dms/image/v2/D5603AQFoGb0-IBadBA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1725482127325?e=1739404800&v=beta&t=F3AMl-Ah5HL7ziTFgJoXEoGU4wosPPD4DEkNdp_COCg',
     name: 'Anindya Roy Chowdhury',
+    img: '/images/people/anindya-roy-chowdhury.jpeg',
     designation: 'Graduate Teaching Assistant',
     caption:
       'July 18, 2021, Anindya Roy worked with 𝐒𝐚𝐣𝐢𝐛 but on different teams',
@@ -78,8 +78,8 @@ const testimonials: Testimonial[] = [
     linkedinLink: 'https://www.linkedin.com/in/anindya83',
   },
   {
-    img: 'https://media.licdn.com/dms/image/v2/D4E03AQHJBlyVqTvLQQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1731767438718?e=1739404800&v=beta&t=YF8OoGCjNpDlAyDd7xz08oPODv_ai5T_9mfzAIel-uA',
     name: 'Mustakimur Rahman Khandaker',
+    img: '/images/people/mustakimur-rahman-khandaker.jpeg',
     designation: 'Assistant Professor at The University of Georgia',
     caption: 'February 4, 2013, Mustakimur Rahman and 𝐒𝐚𝐣𝐢𝐛 studied together',
     text: 'Mr. Sajib Khan is a good programmer and contestant and I wish his bright future.',
