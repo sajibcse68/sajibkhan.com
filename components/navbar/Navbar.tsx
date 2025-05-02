@@ -166,7 +166,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-white dark:bg-blue2-900"
+              className="-m-2.5 rounded-md p-2.5 text-gray-500 dark:text-slate-500"
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />

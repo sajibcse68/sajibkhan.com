@@ -18,7 +18,7 @@
 
 ## Getting Started
 
-Fork/clone this repo
+Fork/clone this repo. Make sure Node version is >= 18.0.0
 
 Go to the folder you cloned, run the development server:
 
