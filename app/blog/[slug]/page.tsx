@@ -12,8 +12,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: any) {
-  const { slug } = await params;
-  const id = slug ? `${slug} | Sajib's Blog` : '';
+  const _params = await params;
+  const { slug } = _params ?? {};
+  const id = slug ? `${slug} | Sajib's Blog` : `Sajib's Blog`;
 
   return {
     title: `${capitalizeFirstLetter(id.replaceAll('-', ' ') ?? '')}`,
