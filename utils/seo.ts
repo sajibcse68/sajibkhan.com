@@ -12,6 +12,7 @@ export function getSiteMetaData({
     'Next.js',
     'TypeScript',
     'Tailwind CSS',
+    'Git',
     'Web Development',
     'Responsive Design',
     'Web Design',
