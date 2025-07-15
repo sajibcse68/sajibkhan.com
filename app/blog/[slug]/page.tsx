@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: any) {
   return getSiteMetaData({
     title: title || '',
     description: blog?.data?.description || '',
+    ...(blog?.data?.cover_image ? { images: [blog.data.cover_image] } : {}),
   });
 }
 
